@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SolsticeDirectory</string>
+    <string name="title_user_detail">User Details</string>
+    <string name="favorite">Favorite</string>
+    <string name="urlSolstice">https://solstice.applauncher.com/external/contacts.json</string>
+    <string name="DetailsTitle">All Contacts</string>
+    <string name="detailName">Name:</string>
+    <string name="companyLabel">Company:</string>
+    <string name="phoneLabel">Phones:</string>
+    <string name="homeLabel">Home</string>
+    <string name="workLabel">Work</string>
+    <string name="mobileLabel">Mobile</string>
+    <string name="addressLabel">Address:</string>
+    <string name="birthdateLabel">Birthdate:</string>
+    <string name="emailLabel">Email:</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

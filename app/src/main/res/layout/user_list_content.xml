@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable name="user" type="com.solstice.contactList.User"/>
+        <variable name="phone" type="com.solstice.contactList.User.Phone"/>
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/user_list_item_shape">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="16dp"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/text_margin"
+                android:layout_marginTop="@dimen/text_margin"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:text="@{user.Name}"/>
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/text_margin"
+                android:layout_marginTop="@dimen/list_item_text_margin"
+                android:layout_below="@id/userName"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textColor="@color/colorSecondary"
+                android:text="@{user.phones.Home}"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</layout>
